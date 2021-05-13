@@ -4,8 +4,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=My, initial-scale=1.0" />
     <title>My Page</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .section {
+        padding: 100px 20px;
+        position: relative;
+      }
+      .container {
+        max-width: 70%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 50px 80px;
+        box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%),
+          0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
+      }
+      .shape {
+        height: 5rem;
+        position: absolute;
+        right: 0;
+      }
+      .shape1 {
+        background-color: #42a5f5;
+        top: 7rem;
+        left: 0;
+        right: 5%;
+      }
+      .shape2 {
+        background-color: #4527a0;
+        top: 12rem;
+        left: 5%;
+      }
+      .shape3 {
+        background-color: #aed581;
+        top: 17rem;
+        left: 10%;
+      }
+      .shapes {
+        z-index: -1;
+        transform: skewY(-10deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.3;
+      }
+    </style>
   </head>
   <body>
-    <h1>mY fIRST pAGE</h1>
+    <div class="section">
+      <div class="shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+      </div>
+      <div class="container">
+        <h3>Hello, this is the content</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+          ducimus quis deleniti deserunt hic nihil tenetur vero ratione animi,
+          similique quae eaque laborum totam asperiores facere quidem incidunt
+          rerum architecto!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          voluptates vel dicta, dolores harum odio facilis pariatur quia
+          recusandae autem laborum numquam nostrum, repellat sit voluptatum amet
+          esse voluptas velit.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
